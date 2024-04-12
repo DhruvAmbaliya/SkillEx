@@ -7,6 +7,8 @@ import { Navigate,useNavigate } from "react-router-dom";
 import Canvas from "../screens/whiteboard";
 import Recorder from "../screens/ScreenShare";
   
+// Modal.setAppElement('#root'); 
+
 const RoomPage = () => {
   const navigate = useNavigate();
   const socket = useSocket();
@@ -141,7 +143,7 @@ const RoomPage = () => {
       </div>
       <div className="button">
       <button style={{margin:10,}} onClick={() => navigate("/LobbyScreen")}>LobbyScreen</button>
-      {myStream && <button onClick={sendStreams}>Send Stream</button>}
+      {myStream && <button style={{margin:10,}} onClick={sendStreams}>Send Stream</button>}
       {remoteSocketId && <button style={{margin:10,}} onClick={handleCallUser}>CALL</button>}
       {remoteSocketId && <button style={{margin:10,}} onClick={leaveCall}>End Call</button>} 
       {remoteSocketId && <button style={{margin:10,}} onClick={() => setShowCanvas(true)}>whiteboard</button>}

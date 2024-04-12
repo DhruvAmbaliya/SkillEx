@@ -660,6 +660,7 @@ function Header(props) {
             borderRadius: "15px",
             display: "flex",
             position: "relative",
+            marginRight: "2%",
           }}
         >
           <div className="head-info2"
@@ -677,6 +678,7 @@ function Header(props) {
               style={{ height: "25px", width: "60%" }}
               placeholder="Search Courses"
             />
+            <button style={{marginLeft:10,marginRight:10, height: "25px", width: "50px"}} onClick={() => navigate("/LobbyScreen")}>Call</button>
             <div
               style={{
                 height: 40,
@@ -756,7 +758,6 @@ function Header(props) {
                       </div>
                     </label>
                     <img style={{ height: 33, width: 33 }} src={progress1!==0?"https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm1ycDM5cmVuOG1peDhuZTRxNjM4aXllbmgwam1iY2FmcTYyOTM2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3oEjI6SIIHBdRxXI40/giphy.gif":pp} />
-                    <button style={{margin:10,}} onClick={() => navigate("/LobbyScreen")}>Call</button>
                   </div>
                 </div>
                 <br />

@@ -7,6 +7,9 @@ import {useSocket} from "../context/SocketContext"
 const LobbyScreen =()=>{
     const [email, setEmail] = useState("");
     const [room, setRoom] = useState("");
+    const name = localStorage.getItem("username");
+    const spleet = name.split(" ");
+    const fName = spleet[0];
 
     const socket = useSocket();
     // console.log(socket);
@@ -35,8 +38,10 @@ const LobbyScreen =()=>{
     },[socket,handleJoinRoom]) 
 
         return(
-            <div className='lobby'>
-                {/* <h1>lobby</h1> */}
+            <div className='lobby' style={{display:"flex",flexDirection:"column"}}>
+            <h2 style={{ letterSpacing: "1px" }}>Hello {fName}!</h2>
+            <h3>Add Details & Create Room</h3>
+                <button style={{margin:10,}} onClick={() => navigate("/Addcts")}>Back To Home Page</button>
                 <form onSubmit={handleSubmitForm} className='input'>
                     {/* <label htmlFor="email">Email Id:</label> */}
                     <input 
@@ -57,7 +62,6 @@ const LobbyScreen =()=>{
                     <br/>
                     <button>Enter Room</button>
                 </form>
-                <button style={{margin:10,}} onClick={() => navigate("/Addcts")}>Back To Home Page</button>
             </div>
         )
 }

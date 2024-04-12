@@ -3,7 +3,8 @@ import Sidebar from './Sidebar'
 import Header from './Header'
 import axios from 'axios'
 import { baseUrl } from './BaseUrl'
-import {storage} from "./Firebase";
+import { auth, storage, firestore } from "./Firebase";
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import Newsandannc from './Newsandannc'
 function Addcts() {
     const [showDiv, setShowDiv] = useState(false)
@@ -119,36 +120,54 @@ function Addcts() {
     }
     const teacherid = courseData.filter((i) => i.specialization === courseName & i.name === teacherName)[0]?._id
 
-
-    const uploadImage = (x) => {
-        if (x !== "") {
-          const uploadTask = storage.ref(`images/${x.name}`).put(x);
+    // const uploadImage = (x) => {
+    //     if (x !== "") {
+    //       const uploadTask = storage.ref(`images/${x.name}`).put(x);
     
-          uploadTask.on(
-            "state_changed",
-            (snapshot) => {
-              setProgress1(
-                Math.ceil((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
-              );
-            },
-            (error) => {
-              console.log(error);
-            },
-            () => {
-              storage
-                .ref("images")
-                .child(x.name)
-                .getDownloadURL()
-                .then((url) => {
-                  setProgress1(0);
-                  setImage(url);
+    //       uploadTask.on(
+    //         "state_changed",
+    //         (snapshot) => {
+    //           setProgress1(
+    //             Math.ceil((snapshot.bytesTransferred / snapshot.totalBytes) * 100)
+    //           );
+    //         },
+    //         (error) => {
+    //           console.log(error);
+    //         },
+    //         () => {
+    //           storage
+    //             .ref("images")
+    //             .child(x.name)
+    //             .getDownloadURL()
+    //             .then((url) => {
+    //               setProgress1(0);
+    //               setImage(url);
+    //             });
+    //         }
+    //       );
+    //     } else {
+    //       alert("no image selected");
+    //     }
+    //   };
+      const uploadImage = (x) => {
+        if (x !== "") {
+            const storageRef = ref(storage, `images/${x.name}`);
+    
+            uploadBytes(storageRef, x).then((snapshot) => {
+                console.log('Uploaded a blob or file!', snapshot);
+                getDownloadURL(storageRef).then((url) => {
+                    console.log('File available at', url);
+                    setImage(url);
+                }).catch((error) => {
+                    console.error('Error getting download URL', error);
                 });
-            }
-          );
+            }).catch((error) => {
+                console.error('Error uploading file', error);
+            });
         } else {
-          alert("no image selected");
+            alert("No image selected");
         }
-      };
+    };
       const [progress1, setProgress1] = useState(0);
 
     return (

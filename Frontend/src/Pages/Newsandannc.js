@@ -58,7 +58,7 @@ function Newsandannc() {
                       <h2>News And Announcement</h2>
                   </div>
                   {newsList.map((i) =>
-                      <div className='lgnd1' style={{ height: "60vh", marginTop: "10px", width: "80%", backgroundColor: "white", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly", borderRadius: 10, paddingBottom: 20 }}><br /><br />
+                      <div className='lgnd1' style={{ height: "60vh", marginTop: "10px", width: "80%", backgroundColor: "white", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-evenly", borderRadius: 10, paddingBottom: 20, }}><br/>
                           <h2>{i.heading}</h2>
                           <label>{i.description}</label>
                           <img className='lgnd1' style={{ height: "40vh", width: "60%" }} src={i.image} />

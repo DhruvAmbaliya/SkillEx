@@ -45,20 +45,28 @@
 }
 
 .first{
+    height: 100vh;
+    width: 100vw;
     background-color: #f0f0f0;
-    margin: 20;
+    /* margin: 20; */
 }
 
 .room{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .button{
     margin: 20;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
+}
+@media (max-width: 768px) { /* Adjust the max-width as needed */
+    .button {
+        flex-direction: column;
+        /* Optionally, you can add other styles specific to the column layout here */
+    }
 }
