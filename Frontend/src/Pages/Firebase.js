@@ -5,13 +5,20 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCPBAQgF8bTMvCVWlU_IOpV-7F0TTp2drc",
-  authDomain: "printbajar-3edba.firebaseapp.com",
-  projectId: "printbajar-3edba",
-  storageBucket: "printbajar-3edba.appspot.com",
-  messagingSenderId: "719533183574",
-  appId: "1:719533183574:web:9db1c35fb15d9a9f0a61f7",
-  measurementId: "G-7W0DG5QC9P",
+  apiKey: "AIzaSyCq7fbces-uSJYidEbDGbs2C3z8VMP9Vl0",
+  authDomain: "skillex-b9701.firebaseapp.com",
+  projectId: "skillex-b9701",
+  storageBucket: "skillex-b9701.appspot.com",
+  messagingSenderId: "277512893590",
+  appId: "1:277512893590:web:9abfecfbeb01432ce63eb7",
+  measurementId: "G-HV6TW5ES5H",
+  // apiKey: "AIzaSyCPBAQgF8bTMvCVWlU_IOpV-7F0TTp2drc",
+  // authDomain: "printbajar-3edba.firebaseapp.com",
+  // projectId: "printbajar-3edba",
+  // storageBucket: "printbajar-3edba.appspot.com",
+  // messagingSenderId: "719533183574",
+  // appId: "1:719533183574:web:9db1c35fb15d9a9f0a61f7",
+  // measurementId: "G-7W0DG5QC9P",
 };
 
 // firebase.initializeApp(firebaseConfig);
