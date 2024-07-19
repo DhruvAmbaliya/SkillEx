@@ -678,7 +678,7 @@ function Header(props) {
               style={{ height: "25px", width: "60%" }}
               placeholder="Search Courses"
             />
-            <button style={{marginLeft:10,marginRight:10, height: "25px", width: "50px"}} onClick={() => navigate("/LobbyScreen")}>Call</button>
+            <button style={{marginLeft:10,marginRight:10, height: "25px", width: "50px",backgroundColor:"white",borderColor:"grey"}} onClick={() => navigate("/LobbyScreen")}>Call</button>
             <div
               style={{
                 height: 40,
