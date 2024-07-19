@@ -46,7 +46,7 @@ const RoomPage = () => {
       setRemoteSocketId(from);
       const stream = await navigator.mediaDevices.getUserMedia({
         audio: true,
-        // video: true,
+        video: true,
       });
       setMyStream(stream);
       console.log(`Incoming Call`, from, offer);

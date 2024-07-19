@@ -40,7 +40,7 @@ function Students() {
                         
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button onClick={()=>{localStorage.setItem("courseData1", JSON.stringify(i)); navigate("/Viewcourses")}} style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw Info</button>
+                            <button onClick={()=>{localStorage.setItem("courseData1", JSON.stringify(i)); navigate("/Viewcourses")}} style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View Info</button>
                         </div>
                     </div>)}
              
@@ -78,7 +78,7 @@ function Students() {
                             <label>by Gordon norman</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw courses</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View courses</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -92,7 +92,7 @@ function Students() {
                             <label>by Sphie Gill</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw courses</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View courses</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -106,7 +106,7 @@ function Students() {
                             <label>by Jean Tate</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw courses</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View courses</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -120,7 +120,7 @@ function Students() {
                             <label>by David Green</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw courses</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View courses</button>
                         </div>
                     </div>
         

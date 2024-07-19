@@ -26,7 +26,7 @@ function Upcomeing() {
                             
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw info</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View info</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -39,7 +39,7 @@ function Upcomeing() {
                             <label style={{fontSize:"19px", fontWeight:"bold",letterSpacing:1,height:25}}>Yash Malawant</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw info</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View info</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -52,7 +52,7 @@ function Upcomeing() {
                             <label style={{fontSize:"19px", fontWeight:"bold",letterSpacing:1,height:25}}>Yash Malawant</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw info</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View info</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -65,7 +65,7 @@ function Upcomeing() {
                             <label style={{fontSize:"19px", fontWeight:"bold",letterSpacing:1,height:25}}>Yash Malawant</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw info</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View info</button>
                         </div>
                     </div>
                     <div style={{height:"12vh", width:"95%", backgroundColor:"whitesmoke",borderRadius:"10px", display:"flex"}}>
@@ -78,7 +78,7 @@ function Upcomeing() {
                             <label style={{fontSize:"19px", fontWeight:"bold",letterSpacing:1,height:25}}>Yash Malawant</label>
                         </div>
                         <div style={{height:"12vh", width:"30%", display:"flex", justifyContent:"center",alignItems:"center"}}>
-                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>Veiw info</button>
+                            <button style={{height:"40px", width:"80%", backgroundColor:"black", color:"white",borderRadius:10,border:"none"}}>View info</button>
                         </div>
                     </div>
         

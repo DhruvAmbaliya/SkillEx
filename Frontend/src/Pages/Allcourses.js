@@ -408,7 +408,7 @@ function Allcourses() {
                             border: "none",
                           }}
                         >
-                          Veiw courses
+                          View courses
                         </button>
                       </div>
                     </div>
@@ -726,7 +726,7 @@ function Allcourses() {
                           }}
                          
                         >
-                          Veiw Info
+                          View Info
                         </button>
                       </div>
                     </div>
@@ -836,7 +836,7 @@ function Allcourses() {
                             border: "none",
                           }}
                         >
-                          Veiw Info
+                          View Info
                         </button>
                       </div>
                     </div>
